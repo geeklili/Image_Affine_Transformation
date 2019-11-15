@@ -1,18 +1,20 @@
-# Instruction
-* The project came from github, on the original basis, I added the image synthesis, image transfer GIF function, And I've annotated some of the functions.
+# 介绍
+项目是为了完成两个头像的转换而来
 
-* This project includes two landmark-based algorithms about face morphing.
+类似于胖虎变成吴亦凡
 
-# example
-Given two images   
+原理是面部识别+仿射变形
+
+# 例子
+获取两个图片，注意图片的尺寸必须保证一样   
 
 ![](img/girl.png)    
 
-and   
+与
 
 ![](img/girl2.png)    
 
-We can get the result as   
+结果就可以是，注：图片来自于网络 
 ![](img/img_affine/combine_girl.gif)    
 
 
