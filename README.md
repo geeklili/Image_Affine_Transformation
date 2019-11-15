@@ -14,7 +14,8 @@
 
 ![](img/girl2.png)    
 
-结果就可以是，注：图片来自于网络 
+结果就可以是，注：图片来自于网络
+
 ![](img/img_affine/combine_girl.gif)    
 
 
