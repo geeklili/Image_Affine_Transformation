@@ -19,5 +19,5 @@
 ![](img/img_affine/combine_girl.gif)    
 
 
-# dependencies
+# 依赖库
 dlib, opencv and numpy
