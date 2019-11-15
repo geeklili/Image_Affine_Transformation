@@ -174,11 +174,12 @@ def convert_to_git():
 
 
 if __name__ == '__main__':
-    print('Preparing data...')
+    print('准备数据...')
     # 人脸识别模型路径
     predictor_path = "./model/shape_predictor_68_face_landmarks.dat"
     face1path = "./img/girl.png"
     face2path = "./img/girl2.png"
+
     # 获使用dlib自带的frontal_face_detector作为我们的特征提取器
     detector = dlib.get_frontal_face_detector()
     # 加载模型
@@ -199,7 +200,7 @@ if __name__ == '__main__':
     # print(face1)
     face2 = cv2.imread(face2path)
 
-    print('Start counting...')
+    print('开始计算...')
 
     for i in range(1, 10):
         img3 = generate_morphing_image(face1, face2, L1, L2, i / 10)
@@ -207,12 +208,12 @@ if __name__ == '__main__':
         print("\r进度:%.2f%%" % (i * (100 / 9)), end='')
 
         cv2.imwrite("./img/img_affine/" + str(i) + ".png", img3)
-    print('The picture has been transformed...')
+    print('图片转换完毕...')
 
-    print('Start converting images into gif...')
+    print('正在转换成gif图...')
     convert_to_git()
 
-    print('Start by combining 9 images into one image...')
+    print('将9个图片转换成一个图片...')
     combine_to_one_pic()
 
-    print('The end...')
+    print('运行结束...')
