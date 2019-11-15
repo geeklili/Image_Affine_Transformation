@@ -137,6 +137,7 @@ def generate_morphing_image(img1, img2, lm1, lm2, alpha):
 
 
 def combine_to_one_pic():
+    """这个是将图片合成一个长图，不需要的话可以关闭"""
     # 1 加载一张图片
     image_origin1 = cv2.imread('./img/img_affine/1.png')
     image_origin2 = cv2.imread('./img/img_affine/2.png')
