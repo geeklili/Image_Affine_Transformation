@@ -14,7 +14,7 @@
 
 ![](img/girl2.png)    
 
-结果就可以是，注：图片来自于网络
+结果如下，这是个动态图，如果显示不出来，可以下载img/img_affine/combine_girl.gif查看效果，注：图片来自于网络
 
 ![](img/img_affine/combine_girl.gif)    
 
